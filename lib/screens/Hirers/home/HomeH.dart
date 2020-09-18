@@ -77,8 +77,8 @@ class _HomeHState extends State<HomeH> {
           child: Column(
             children: [
               ListTile(
-                title: Text('Houshold Help'),
-                subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
+                title: Text('Factory Worker'),
+                subtitle: Text('Labour work'),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -111,8 +111,8 @@ class _HomeHState extends State<HomeH> {
           child: Column(
             children: [
               ListTile(
-                title: Text('Houshold Help'),
-                subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
+                title: Text('Construction Worker'),
+                subtitle: Text('Labour Work'),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
