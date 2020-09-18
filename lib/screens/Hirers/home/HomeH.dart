@@ -40,12 +40,33 @@ class _HomeHState extends State<HomeH> {
         padding: EdgeInsets.only(top: 8.0),
         child: Card(
           margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            title: Text('Houshold Help'),
-            subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
-            
+          child: Column(
+            children: [
+              ListTile(
+                title: Text('Houshold Help'),
+                subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
+              ),
+              ListTile(
+                title: Text('10,000 per month'),
+                subtitle: Text('XXXX, Jaipur, Rajasthan'),
+              ),
+              ButtonBar(
+              children: <Widget>[
+                FlatButton.icon(
+                  icon: Icon(Icons.call),
+                  label: const Text('Call'),
+                  onPressed: () {/* ... */},
+                ),
+                FlatButton.icon(
+                  icon: Icon(Icons.send),
+                  label: const Text('Apply'),
+                  onPressed: () {/* ... */},
+                ),
+              ],
+            ),
+            ],
           ),
-        ));
+          )),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
