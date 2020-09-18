@@ -12,15 +12,15 @@ class _HomeHState extends State<HomeH> {
     BottomNavigationBarItem(
       icon: const Icon(Icons.queue),
       title: Text('Applications'),
-      ),
-      BottomNavigationBarItem(
+    ),
+    BottomNavigationBarItem(
       icon: const Icon(Icons.work),
       title: Text('Jobs'),
-      ),
-      BottomNavigationBarItem(
+    ),
+    BottomNavigationBarItem(
       icon: const Icon(Icons.account_circle),
       title: Text('Profile'),
-      )
+    )
   ];
 
   @override
@@ -33,111 +33,118 @@ class _HomeHState extends State<HomeH> {
           style: TextStyle(color: Colors.white, fontSize: 24),
         ),
         backgroundColor: Colors.teal[300],
+        actions: [
+          FlatButton.icon(
+            icon: Icon(Icons.exit_to_app),
+            label: Text('LogOut'),
+            onPressed: () {},
+          )
+        ],
       ),
       body: ListView(
         children: [
           Padding(
-        padding: EdgeInsets.only(top: 8.0),
-        child: Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: Column(
-            children: [
-              ListTile(
-                title: Text('Houshold Help'),
-                subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                Text('10,000 per month'),
-                Text('XXXX, Jaipur, Rajasthan'),
-                ]),
-              ButtonBar(
-              children: <Widget>[
-                FlatButton.icon(
-                  icon: Icon(Icons.call),
-                  label: const Text('Call'),
-                  onPressed: () {/* ... */},
+              padding: EdgeInsets.only(top: 8.0),
+              child: Card(
+                margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+                child: Column(
+                  children: [
+                    ListTile(
+                      title: Text('Houshold Help'),
+                      subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text('10,000 per month'),
+                          Text('XXXX, Jaipur, Rajasthan'),
+                        ]),
+                    ButtonBar(
+                      children: <Widget>[
+                        FlatButton.icon(
+                          icon: Icon(Icons.call),
+                          label: const Text('Call'),
+                          onPressed: () {/* ... */},
+                        ),
+                        FlatButton.icon(
+                          icon: Icon(Icons.send),
+                          label: const Text('Apply'),
+                          onPressed: () {/* ... */},
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-                FlatButton.icon(
-                  icon: Icon(Icons.send),
-                  label: const Text('Apply'),
-                  onPressed: () {/* ... */},
-                ),
-              ],
-            ),
-            ],
-          ),
-          )),
+              )),
           Padding(
-        padding: EdgeInsets.only(top: 8.0),
-        child: Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: Column(
-            children: [
-              ListTile(
-                title: Text('Factory Worker'),
-                subtitle: Text('Labour work'),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                Text('10,000 per month'),
-                Text('XXXX, Jaipur, Rajasthan'),
-                ]),
-              ButtonBar(
-              children: <Widget>[
-                FlatButton.icon(
-                  icon: Icon(Icons.call),
-                  label: const Text('Call'),
-                  onPressed: () {/* ... */},
+              padding: EdgeInsets.only(top: 8.0),
+              child: Card(
+                margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+                child: Column(
+                  children: [
+                    ListTile(
+                      title: Text('Factory Worker'),
+                      subtitle: Text('Labour work'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text('10,000 per month'),
+                          Text('XXXX, Jaipur, Rajasthan'),
+                        ]),
+                    ButtonBar(
+                      children: <Widget>[
+                        FlatButton.icon(
+                          icon: Icon(Icons.call),
+                          label: const Text('Call'),
+                          onPressed: () {/* ... */},
+                        ),
+                        FlatButton.icon(
+                          icon: Icon(Icons.send),
+                          label: const Text('Apply'),
+                          onPressed: () {/* ... */},
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-                FlatButton.icon(
-                  icon: Icon(Icons.send),
-                  label: const Text('Apply'),
-                  onPressed: () {/* ... */},
-                ),
-              ],
-            ),
-            ],
-          ),
-          )),
+              )),
           Padding(
-        padding: EdgeInsets.only(top: 8.0),
-        child: Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: Column(
-            children: [
-              ListTile(
-                title: Text('Construction Worker'),
-                subtitle: Text('Labour Work'),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                Text('10,000 per month'),
-                Text('XXXX, Jaipur, Rajasthan'),
-                ]),
-              ButtonBar(
-              children: <Widget>[
-                FlatButton.icon(
-                  icon: Icon(Icons.call),
-                  label: const Text('Call'),
-                  onPressed: () {/* ... */},
+              padding: EdgeInsets.only(top: 8.0),
+              child: Card(
+                margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+                child: Column(
+                  children: [
+                    ListTile(
+                      title: Text('Construction Worker'),
+                      subtitle: Text('Labour Work'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text('10,000 per month'),
+                          Text('XXXX, Jaipur, Rajasthan'),
+                        ]),
+                    ButtonBar(
+                      children: <Widget>[
+                        FlatButton.icon(
+                          icon: Icon(Icons.call),
+                          label: const Text('Call'),
+                          onPressed: () {/* ... */},
+                        ),
+                        FlatButton.icon(
+                          icon: Icon(Icons.send),
+                          label: const Text('Apply'),
+                          onPressed: () {/* ... */},
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-                FlatButton.icon(
-                  icon: Icon(Icons.send),
-                  label: const Text('Apply'),
-                  onPressed: () {/* ... */},
-                ),
-              ],
-            ),
-            ],
-          ),
-          )),
+              )),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

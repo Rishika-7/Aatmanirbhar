@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class HomeH extends StatefulWidget {
+class ApplicationsH extends StatefulWidget {
   @override
   _HomeHState createState() => _HomeHState();
 }
 
-class _HomeHState extends State<HomeH> {
-  int _currentindex = 1;
+class _HomeHState extends State<ApplicationsH> {
+  int _currentindex = 0;
 
   var bottomNavigationBarItems = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
@@ -61,8 +61,42 @@ class _HomeHState extends State<HomeH> {
                   onPressed: () {/* ... */},
                 ),
                 FlatButton.icon(
-                  icon: Icon(Icons.send),
-                  label: const Text('Apply'),
+                  icon: Icon(Icons.cancel),
+                  label: const Text('Cancel'),
+                  onPressed: () {/* ... */},
+                ),
+              ],
+            ),
+            ],
+          ),
+          )),
+          Padding(
+        padding: EdgeInsets.only(top: 8.0),
+        child: Card(
+          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+          child: Column(
+            children: [
+              ListTile(
+                title: Text('Factory Worker'),
+                subtitle: Text('Labour work'),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                Text('10,000 per month'),
+                Text('XXXX, Jaipur, Rajasthan'),
+                ]),
+              ButtonBar(
+              children: <Widget>[
+                FlatButton.icon(
+                  icon: Icon(Icons.call),
+                  label: const Text('Call'),
+                  onPressed: () {/* ... */},
+                ),
+                FlatButton.icon(
+                  icon: Icon(Icons.cancel),
+                  label: const Text('Cancel'),
                   onPressed: () {/* ... */},
                 ),
               ],
