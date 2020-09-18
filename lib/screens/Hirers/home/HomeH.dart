@@ -46,10 +46,13 @@ class _HomeHState extends State<HomeH> {
                 title: Text('Houshold Help'),
                 subtitle: Text('Jhadu, Pochha, Bartan, Kapde dhone'),
               ),
-              ListTile(
-                title: Text('10,000 per month'),
-                subtitle: Text('XXXX, Jaipur, Rajasthan'),
-              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                Text('10,000 per month'),
+                Text('XXXX, Jaipur, Rajasthan'),
+                ]),
               ButtonBar(
               children: <Widget>[
                 FlatButton.icon(
